@@ -1,0 +1,35 @@
+sudo.txt
+Created Sun 01 Dec 2019 10:09:52 PM AKST
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+sudo - Provide limited super user privileges to specific users
+
+
+Adding users to sudo
+====================
+In order for a non-root user to make use of sudo, they either
+have to be added to the sudoers file using visudo, or added
+to the sudo group.  Because this is Debian, everyone that is
+in the sudo group has full sudo access.  So instead of messing
+with the sudoers file, we're going to add our users to the
+sudo group.  I've always found this a much cleaner method on
+Debian.  To do this, open your terminal window, su to the root
+user, and issue the following command:
+
+  usermod -aG sudo USERNAME
+
+Where USERNAME is the name of the user to be added.
+
+Once the user logs out and logs back in, they will have full
+access to sudo.  At this point, you no longer have to log into
+your Debian minimal server as root to get things done.  Log in
+as a user who belongs to the sudo group and you'll have full
+admin rights to your server.
+--www.techrepublic.com/article/how-to-install-sudo-on-a-debian-minimal-server/
+
+
+Links
+=====
+How to install sudo on a Debian minimal server
+https://www.techrepublic.com/article/how-to-install-sudo-on-a-debian-minimal-server/
