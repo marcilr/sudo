@@ -8,5 +8,11 @@ sudo related links
 
 Links
 =====
+How to install sudo on a Debian minimal server
+Has:
+  apt install sudo
+  usermod -aG sudo USERNAME
+https://www.techrepublic.com/article/how-to-install-sudo-on-a-debian-minimal-server/
+
 Sudoers
 https://help.ubuntu.com/community/Sudoers
