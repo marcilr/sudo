@@ -8,6 +8,10 @@ sudo related links
 
 Links
 =====
+Enable 'sudo' on an user account in Debian
+Manuel Ignacio Lopez Quintero
+http://milq.github.io/enable-sudo-user-account-debian/
+
 How to install sudo on a Debian minimal server
 Has:
   apt install sudo
